@@ -10,8 +10,10 @@ $channelName = Get-Team -DisplayName $channelName
 
 Add-TeamUser -GroupId $channelName.GroupId -User $userToAdd
 
-$subName = Read-Host "Enter sub \ private channel name"
+$subName = Read-Host "Enter private channel name ie Escalations"
 Write-Host $channelName.GroupId " this id is for " $channelName.DisplayName
 Write-Host $subName
 Write-Host $userToAdd
 Add-TeamChannelUser -GroupId $channelName.GroupId -DisplayName $subName -User $userToAdd
+
+Read-Host -Prompt "Press ENTER key to continue"

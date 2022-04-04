@@ -1,0 +1,4 @@
+Download from top right, unzip
+Right click AdderScript.ps1 and select run
+
+It will attempt to add the user to the channel and then add them to the sub group.
